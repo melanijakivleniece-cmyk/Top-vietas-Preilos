@@ -1,76 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Places in Preiļi</title>
+    <title>Top vietas Preiļos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            text-align: center;
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        .place-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .place-card:hover {
+            transform: translateY(-5px);
+        }
+        .place-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            float: left;
+            margin-right: 15px;
+        }
+        .place-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .place-description {
+            color: #666;
+            line-height: 1.6;
+            padding-left: 55px;
+        }
+        .place-icon {
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Top Places in Preiļi</h1>
-    <h2>1. Autoosta</h2>
-    <p>The central bus station offering convenient transportation options.</p>
-    <ul>
-        <li>Advantages:
-            <ul>
-                <li>Easy access to other cities.</li>
-                <li>Affordable travel options.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>2. Parks</h2>
-    <p>Beautiful green spaces perfect for relaxation and recreation.</p>
-    <ul>
-        <li>Advantages:
-            <ul>
-                <li>Ideal for family outings.</li>
-                <li>Fresh air and nature.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>3. Pludmale</h2>
-    <p>The beach area where locals and visitors enjoy the sun and water.</p>
-    <ul>
-        <li>Advantages:
-            <ul>
-                <li>Great for swimming and sunbathing.</li>
-                <li>Activities for all ages.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>4. Preiļu Pils</h2>
-    <p>The historical castle showcasing beautiful architecture.</p>
-    <ul>
-        <li>Advantages:
-            <ul>
-                <li>Rich cultural history.</li>
-                <li>Scenic views of the surrounding area.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>5. Maxima</h2>
-    <p>A popular supermarket chain for all your shopping needs.</p>
-    <ul>
-        <li>Advantages:
-            <ul>
-                <li>Wide variety of products.</li>
-                <li>Convenient location.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>6. Ļeļļu galerija</h2>
-    <p>A gallery showcasing local art and crafts.</p>
-    <ul>
-        <li>Advantages:
-            <ul>
-                <li>Support local artists.</li>
-                <li>Unique gifts and souvenirs.</li>
-            </ul>
-        </li>
-    </ul>
+    <div class="container">
+        <h1>🏰 Top vietas Preiļos</h1>
+        <p class="subtitle">Preiļu pilsētas populārākās vietas</p>
+        
+        <div class="place-card">
+            <span class="place-number">1</span>
+            <h2 class="place-name"><span class="place-icon">🏰</span>Preiļu pils</h2>
+            <p class="place-description">Vēsturiska muižas pils 16.gadsimtā būvēta, viena no galvenajām pilsētas apskates vietām. Pils apkārtnē ir skaists parks ar ezeru.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">2</span>
+            <h2 class="place-name"><span class="place-icon">🎨</span>Leļļu galerija</h2>
+            <p class="place-description">Unikāla galerija, kurā var apskatīt dažādu valstu tradicionālās kostīmos tērptas lelles. Interesants kultūras objekts visai ģimenei.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">3</span>
+            <h2 class="place-name"><span class="place-icon">🌳</span>Preiļu parks</h2>
+            <p class="place-description">Skaists dabas parks pie pilsētas centra. Ideāls vieta pastaigām, atpūtai un dabas baudīšanai visu gadalaiku.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">4</span>
+            <h2 class="place-name"><span class="place-icon">🚌</span>Preiļu autoosta</h2>
+            <p class="place-description">Pilsētas galvenais transporta mezgls. Sazīmē ar reisiem uz Rīgu, Daugavpili un citām Latvijas pilsētām.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">5</span>
+            <h2 class="place-name"><span class="place-icon">🏪</span>Maxima</h2>
+            <p class="place-description">Lielākais tirdzniecības centrs Preiļos. Plaša preču izvēle, ērti iepirkumi un atpūtas iespējas.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">6</span>
+            <h2 class="place-name"><span class="place-icon">🏖️</span>Preiļu pludmale</h2>
+            <p class="place-description">Smilšu pludmale pie ezera pilsētas nomalē. Vasarā populāra atpūtas vieta ar iespēju peldēties un sauļoties.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">7</span>
+            <h2 class="place-name"><span class="place-icon">⛪</span>Preiļu baznīca</h2>
+            <p class="place-description">Vēsturiska katoļu baznīca pilsētas centrā. Nozīmīgs reliģisks un arhitektūras piemineklis.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">8</span>
+            <h2 class="place-name"><span class="place-icon">🎭</span>Kultūras nams</h2>
+            <p class="place-description">Pilsētas kultūras centrs ar dažādiem pasākumiem, koncertiem un izstādēm visu gadu.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">9</span>
+            <h2 class="place-name"><span class="place-icon">📚</span>Preiļu bibliotēka</h2>
+            <p class="place-description">Pilsētas publiskā bibliotēka ar plašu grāmatu un mediju kolekciju. Labs resurss izglītībai un atpūtai.</p>
+        </div>
+        
+        <div class="place-card">
+            <span class="place-number">10</span>
+            <h2 class="place-name"><span class="place-icon">🛤️</span>Preiļu dzelzceļa stacija</h2>
+            <p class="place-description">Vēsturiska dzelzceļa stacija, kas savieno Preiļus ar citām Latvijas pilsētām. Nozīmīgs transporta mezglu vēsturiskā kontekstā.</p>
+        </div>
+    </div>
 </body>
 </html>
