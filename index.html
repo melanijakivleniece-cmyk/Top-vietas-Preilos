@@ -33,104 +33,188 @@
             margin-bottom: 30px;
             font-size: 1.2em;
         }
-        .place-card {
+        .nav-menu {
             background: white;
             border-radius: 15px;
             padding: 20px;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
         }
-        .place-card:hover {
-            transform: translateY(-5px);
-        }
-        .place-number {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.2em;
-            float: left;
-            margin-right: 15px;
-        }
-        .place-name {
-            font-size: 1.5em;
+        .nav-menu h2 {
             color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .nav-list {
+            list-style: none;
+        }
+        .nav-list li {
             margin-bottom: 10px;
         }
-        .place-description {
-            color: #666;
-            line-height: 1.6;
-            padding-left: 55px;
+        .nav-list a {
+            display: block;
+            padding: 12px 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 500;
+        }
+        .nav-list a:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .place-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .place-section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        .place-section p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .back-to-top {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .back-to-top:hover {
+            background: #764ba2;
         }
         .place-icon {
-            font-size: 1.5em;
-            margin-right: 5px;
+            font-size: 2em;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🏰 Top vietas Preiļos</h1>
-        <p class="subtitle">Preiļu pilsētas populārākās vietas</p>
+        <p class="subtitle">Atklājiet skaistākās vietas Preiļu novadā</p>
         
-        <div class="place-card">
-            <span class="place-number">1</span>
-            <h2 class="place-name"><span class="place-icon">🏰</span>Preiļu pils</h2>
-            <p class="place-description">Vēsturiska muižas pils 16.gadsimtā būvēta, viena no galvenajām pilsētas apskates vietām. Pils apkārtnē ir skaists parks ar ezeru.</p>
+        <!-- Navigācijas izvēlne -->
+        <div class="nav-menu">
+            <h2>📍 Izvēlieties vietu:</h2>
+            <ul class="nav-list">
+                <li><a href="#pils">1. Preiļu pils</a></li>
+                <li><a href="#galerija">2. Leļļu galerija</a></li>
+                <li><a href="#parks">3. Preiļu parks</a></li>
+                <li><a href="#autoosta">4. Preiļu autoosta</a></li>
+                <li><a href="#maxima">5. Maxima</a></li>
+                <li><a href="#pludmale">6. Preiļu pludmale</a></li>
+                <li><a href="#baznica">7. Preiļu baznīca</a></li>
+                <li><a href="#kulturas-nams">8. Kultūras nams</a></li>
+                <li><a href="#biblioteka">9. Preiļu bibliotēka</a></li>
+            </ul>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">2</span>
-            <h2 class="place-name"><span class="place-icon">🎨</span>Leļļu galerija</h2>
-            <p class="place-description">Unikāla galerija, kurā var apskatīt dažādu valstu tradicionālās kostīmos tērptas lelles. Interesants kultūras objekts visai ģimenei.</p>
+        <!-- Preiļu pils -->
+        <div class="place-section" id="pils">
+            <h2><span class="place-icon">🏰</span>Preiļu pils</h2>
+            <p>Preiļu pils ir viena no ievērojamākajām baroka stilā celtajām pilīm Latvijā. Tā tika uzcelta 18. gadsimta otrajā pusē kā muižas ēka, un mūsdienās tajā izvietojies Preiļu vēsturies muzejs.</p>
+            <p>Pils ir zināma ar savu grezno interjeru, kas ietver dažādas stilistiskas telpas - no baroka līdz neoklasicismam. Apkārt pils parkam ir skaista aleja, kas ved uz Preiļu ezeru.</p>
+            <p><strong>Adrese:</strong> Preiļu pils, Preiļi, Preiļu novads</p>
+            <p><strong>Darba laiks:</strong> O-Td: 9:00-17:00, Ce: 9:00-18:00</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">3</span>
-            <h2 class="place-name"><span class="place-icon">🌳</span>Preiļu parks</h2>
-            <p class="place-description">Skaists dabas parks pie pilsētas centra. Ideāls vieta pastaigām, atpūtai un dabas baudīšanai visu gadalaiku.</p>
+        <!-- Leļļu galerija -->
+        <div class="place-section" id="galerija">
+            <h2><span class="place-icon">🎨</span>Leļļu galerija</h2>
+            <p>Leļļu galerija ir unikāla kultūras vieta Preiļos, kas piedāvā apskatīt dažādu mākslinieku darbus. Galerija regulāri rīko izstādes gan vietējiem, gan starptautiskiem māksliniekiem.</p>
+            <p>Šī ir vieta, kur var iepazīties ar latgales kultūras mantojumu caur mākslas darbiem. Galerija piedāvā arī radošās darbnīcas bērniem un pieaugušajiem.</p>
+            <p><strong>Adrese:</strong> Raiņa iela 22, Preiļi</p>
+            <p><strong>Darba laiks:</strong> O-Se: 10:00-18:00</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">4</span>
-            <h2 class="place-name"><span class="place-icon">🚌</span>Preiļu autoosta</h2>
-            <p class="place-description">Pilsētas galvenais transporta mezgls. Sazīmē ar reisiem uz Rīgu, Daugavpili un citām Latvijas pilsētām.</p>
+        <!-- Preiļu parks -->
+        <div class="place-section" id="parks">
+            <h2><span class="place-icon">🌳</span>Preiļu parks</h2>
+            <p>Preiļu parks ir skaists dabas parks Preiļu pils apkārtnē. Parks aizņem vairākus hektārus un piedāvā pastaigas pa skaistajām alejām, kā arī iespēju baudīt dabas klusumu.</p>
+            <p>Parkā aug dažādas koku sugas, tai skaitā retas lapkoku un skuju koku odžas. Vasarā parks piedāvā ēnu no karstajām saules stariem, bet rudens laikā - krāšņu lapu krāsojumu.</p>
+            <p><strong>Atrašanās vieta:</strong> Preiļu pils teritorijā</p>
+            <p><strong>Īpašums:</strong> Atklāts visu gadu, bez maksas</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">5</span>
-            <h2 class="place-name"><span class="place-icon">🏪</span>Maxima</h2>
-            <p class="place-description">Lielākais tirdzniecības centrs Preiļos. Plaša preču izvēle, ērti iepirkumi.</p>
+        <!-- Preiļu autoosta -->
+        <div class="place-section" id="autoosta">
+            <h2><span class="place-icon">🚌</span>Preiļu autoosta</h2>
+            <p>Preiļu autoosta ir galvenais sabiedriskā transporta mezgls Preiļu novadā. No šeit var nokļūt uz dažādām Latvijas pilsētām, tai skaitā Rīgu, Daugavpili, Ludzu un citām.</p>
+            <p>Autoosta piedāvā ērtus pakalpojumus ceļotājiem - gaiteņus ar soliņiem, informācijas centru un iespēju iegādāties biļetes uz reģionālajiem un starppilsētu maršrutiem.</p>
+            <p><strong>Adrese:</strong> Autoostas iela, Preiļi</p>
+            <p><strong>Pakalpojumi:</strong> Biļešu tirdzniecība, informācija, gaiteņi</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">6</span>
-            <h2 class="place-name"><span class="place-icon">🏖️</span>Preiļu pludmale</h2>
-            <p class="place-description">Smilšu pludmale pie ezera pilsētas nomalē. Vasarā populāra atpūtas vieta ar iespēju peldēties un sauļoties.</p>
+        <!-- Maxima -->
+        <div class="place-section" id="maxima">
+            <h2><span class="place-icon">🛒</span>Maxima</h2>
+            <p>Maxima ir lielākā Latvijas tirdzniecības tīkla veikalu ķēde. Preiļos atrodams Maxima veikals, kas piedāvā plašu produktu klāstu ikdienas pirkumiem.</p>
+            <p>Veikals piedāvā gan pārtikas produktus, gan sadzīves preces. Tā ir ērta vieta, kur iegādāties visu nepieciešamo ikdienas vajadzībām.</p>
+            <p><strong>Adrese:</strong> Preiļi, Preiļu novads</p>
+            <p><strong>Darba laiks:</strong> Parasti 8:00-22:00</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">7</span>
-            <h2 class="place-name"><span class="place-icon">⛪</span>Preiļu baznīca</h2>
-            <p class="place-description">Vēsturiska katoļu baznīca pilsētas centrā. Nozīmīgs reliģisks un arhitektūras piemineklis.</p>
+        <!-- Preiļu pludmale -->
+        <div class="place-section" id="pludmale">
+            <h2><span class="place-icon">🏖️</span>Preiļu pludmale</h2>
+            <p>Preiļu pludmale atrodas pie Preiļu ezera un piedāvā atpūtu pie ūdens karstajās vasaras dienās. Pludmale ir labi aprīkota ar nepieciešamo infrastruktūru.</p>
+            <p>Šeit var baudīt sauli, peldēties ezera ūdenī un izmantot dažādus ūdens sporta veidus. Apkārtnē ir arī kopti un atpūtas vietas ģimenēm ar bērniem.</p>
+            <p><strong>Atrašanās vieta:</strong> Preiļu ezera krasts</p>
+            <p><strong>Īpašums:</strong> Bezmaksas piekļuve</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">8</span>
-            <h2 class="place-name"><span class="place-icon">🎭</span>Kultūras nams</h2>
-            <p class="place-description">Pilsētas kultūras centrs ar dažādiem pasākumiem, koncertiem un izstādēm visu gadu.</p>
+        <!-- Preiļu baznīca -->
+        <div class="place-section" id="baznica">
+            <h2><span class="place-icon">⛪</span>Preiļu baznīca</h2>
+            <p>Preiļu baznīca ir katoļu dievnams, kas ir nozīmīgs garīgais un arhitektūras piemineklis Preiļos. Baznīca tika celta 18. gadsimtā un piedāvā iepazīt garīgo mantojumu.</p>
+            <p>Baznīcas interjers ir bagāts ar altāriem un religiozām freskām. Šeit notiek dievkalpojumi un dažādi garīgie pasākumi visu gadu garumā.</p>
+            <p><strong>Adrese:</strong> Baznīcas iela, Preiļi</p>
+            <p><strong>Konfesija:</strong> Katoļu</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
         
-        <div class="place-card">
-            <span class="place-number">9</span>
-            <h2 class="place-name"><span class="place-icon">📚</span>Preiļu bibliotēka</h2>
-            <p class="place-description">Pilsētas publiskā bibliotēka ar plašu grāmatu un mediju kolekciju. Labs resurss izglītībai un atpūtai.</p>
+        <!-- Kultūras nams -->
+        <div class="place-section" id="kulturas-nams">
+            <h2><span class="place-icon">🎭</span>Kultūras nams</h2>
+            <p>Kultūras nams Preiļos ir galvenā kultūras norises vieta pilsētā. Šeit notiek dažādi pasākumi - koncerti, izstādes, teātra izrādes un citas kultūras aktivitātes.</p>
+            <p>Kultūras nams piedāvā gan lielu zāli priekšvedējiem, gan mazākas telpas radošajām grupām. Tā ir vieta, kur pulcējas vietējā kopiena un viesi no citām vietām.</p>
+            <p><strong>Adrese:</strong> Daugavpils iela, Preiļi</p>
+            <p><strong>Pasākumi:</strong> Koncerti, izstādes, teātris, kino</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
         </div>
+        
+        <!-- Preiļu bibliotēka -->
+        <div class="place-section" id="biblioteka">
+            <h2><span class="place-icon">📚</span>Preiļu bibliotēka</h2>
+            <p>Preiļu bibliotēka ir svarīgs izglītības un kultūras centrs Preiļu novadā. Bibliotēka piedāvā plašu grāmatu kolekciju, kā arī dažādus pakalpojumus iedzīvotājiem.</p>
+            <p>Šeit var atrast gan jaunākās grāmatas, gan klasisko literatūru. Bibliotēka piedāvā arī lasītāju klubus, pasākumus bērniem un piekļuvi digitālajiem resursiem.</p>
+            <p><strong>Adrese:</strong> Bibliotēkas iela, Preiļi</p>
+            <p><strong>Darba laiks:</strong> O-Se: 9:00-18:00</p>
+            <a href="#" class="back-to-top">↑ Atgriezties augšā</a>
+        </div>
+        
+    </div>
 </body>
 </html>
